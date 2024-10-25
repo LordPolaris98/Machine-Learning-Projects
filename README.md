@@ -9,21 +9,4 @@ Key Highlights:
 3. Problem-Solving Approach: Discover how I've applied machine learning to address specific challenges and extract valuable insights.
 4. Continuous Learning: Witness my growth and development as I tackle increasingly complex projects.
 
-The topics covered in the code are:
 
-Data Analysis and Visualization:
-  1. Data loading and exploration using pandas
-  2. Data cleaning and preprocessing
-  3. Exploratory data analysis using histograms, correlation matrices, and scatter plots
-Feature Engineering:
-  1. Creating new features based on existing ones
-  2. Log transformations for skewed features
-  3. One-hot encoding for categorical features
-Machine Learning Models:
-  1. Linear Regression
-  2. Random Forest Regression
-Model Evaluation:
-  1. Model training and evaluation using training and testing datasets
-  2. Evaluation metrics (e.g., R-squared)
-Hyperparameter Tuning:
-  1. GridSearchCV for optimizing hyperparameters
