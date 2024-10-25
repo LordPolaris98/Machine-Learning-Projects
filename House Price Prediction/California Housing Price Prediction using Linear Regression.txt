@@ -1,0 +1,44 @@
+California Housing Price Prediction (Work in Progress)
+This project aims to predict median house prices in California using a dataset containing various housing-related features.
+
+
+Data Exploration and Cleaning:
+We imported necessary libraries (numpy, pandas, matplotlib, seaborn)
+Loaded the "housing.csv" dataset using pandas.
+Analyzed the data structure (data.info()) and obtained summary statistics (data.describe())
+Checked the first few rows (data.head()) to get a glimpse of the data.
+Dropped rows with missing values (data.dropna(inplace=True)) and verified the impact (data.info())
+Identified the data columns (data.columns)
+
+
+Feature Engineering:
+Split the data into features (independent variables) and target variable (median house value).
+Separated features and target using train_test_split for training and testing purposes.
+Combined the remaining features and target back into a single dataframe (train_data)
+Visualized the distribution of features through histograms (train_data.hist())
+Calculated the correlation matrix to understand relationships between features (train_data.corr())
+Performed log transformation on specific features (total_rooms, total_bedrooms, population, households) to address potential skewness.
+Converted the categorical "ocean_proximity" feature into one-hot encoded dummy variables.
+Analyzed the correlation matrix again after feature engineering (train_data.corr())
+Created new features: "bedroom_ratio" and "household_rooms" based on existing features.
+
+
+Model Building and Evaluation:
+Linear Regression:
+Implemented a linear regression model (LinearRegression())
+Standardized the features using StandardScaler() before fitting the model.
+Evaluated the model performance on the test set using the score() method (current score might not be optimal)
+Random Forest Regression:
+Implemented a Random Forest Regression model (RandomForestRegressor())
+Evaluated the model performance on the test set using the score() method (showed better performance than Linear Regression)
+Grid Search for Hyperparameter Tuning: (Not implemented yet)
+Defined a parameter grid for the Random Forest model (n_estimators, max_features, min_sample_split)
+Planned to use GridSearchCV for hyperparameter optimization.
+
+Note: This is a work in progress. The current model (Linear Regression) might not be the optimal choice for this dataset. We plan to further explore Random Forest Regression with hyperparameter tuning using GridSearchCV to potentially improve the model's performance.
+
+Next Possible Steps:
+
+Hyperparameter tuning for the Random Forest model.
+Exploring other machine learning models like XGBoost or Support Vector Machines.
+Evaluating model performance using different metrics like Mean Squared Error (MSE).
